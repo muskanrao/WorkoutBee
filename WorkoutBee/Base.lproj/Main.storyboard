@@ -1,24 +1,286 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OEm-4Q-mUl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="WorkoutBee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0n-jD-v8a">
+                                <rect key="frame" x="127" y="600" width="201" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Log In"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luB-r4-MRV">
+                                <rect key="frame" x="127" y="718" width="201" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Sign Up"/>
+                                <connections>
+                                    <segue destination="ypx-Yv-o7x" kind="show" id="3Mo-sj-I5m"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bjc-Qk-0dX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="553.62318840579712" y="81.696428571428569"/>
+        </scene>
+        <!--Onboard View Controller-->
+        <scene sceneID="rDU-gB-c5W">
+            <objects>
+                <viewController id="ypx-Yv-o7x" customClass="OnboardViewController" customModule="WorkoutBee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OZy-Ck-Lye">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Tq2-El-8mJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="636"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7Tm-oL-M3h">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="mvz-Jh-ANx" customClass="OnboardingCollectionViewCell" customModule="WorkoutBee" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="13" width="414" height="610"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yR3-K6-6mc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="610"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="guE-9a-ux3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Best Solution for Body fit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Je5-p6-II8">
+                                                    <rect key="frame" x="8" y="447" width="398" height="65"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WorkoutBee is the best solution for making your body fit and health......." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVw-OY-dAK">
+                                                    <rect key="frame" x="16" y="520" width="398" height="82"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="414" height="610"/>
+                                        <connections>
+                                            <outlet property="slideDescription" destination="kVw-OY-dAK" id="m9Q-wU-ZyE"/>
+                                            <outlet property="slideImage" destination="guE-9a-ux3" id="4Or-TJ-qbt"/>
+                                            <outlet property="slideTitleText" destination="Je5-p6-II8" id="BP1-Ft-DGj"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ypx-Yv-o7x" id="a3E-a0-FqP"/>
+                                    <outlet property="delegate" destination="ypx-Yv-o7x" id="p7l-Nk-gJT"/>
+                                </connections>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Vhe-yj-LW0">
+                                <rect key="frame" x="149" y="732" width="116" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="0.047058824450000002" green="0.047058824450000002" blue="0.039215687659999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEQ-Kv-FDa">
+                                <rect key="frame" x="133" y="794" width="149" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Next">
+                                    <color key="baseForegroundColor" red="0.039215687659999998" green="0.039215687659999998" blue="0.031372550870000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="ypx-Yv-o7x" eventType="touchUpInside" id="cJr-Fs-J3j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I9V-xQ-Gra"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lvn-SY-po7"/>
+                    <connections>
+                        <outlet property="Button" destination="LEQ-Kv-FDa" id="Ty3-Kp-Luj"/>
+                        <outlet property="collectionView" destination="Tq2-El-8mJ" id="2RS-1r-4c3"/>
+                        <outlet property="pageControler" destination="Vhe-yj-LW0" id="VGd-Op-bYI"/>
+                        <segue destination="T1J-YJ-5uf" kind="show" identifier="Signup" id="Z2W-Lp-hmf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PzN-Za-su4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1402.8985507246377" y="88.392857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ERf-Oj-Dph">
+            <objects>
+                <viewController id="1QX-1w-JYL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R0c-DY-1uw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2w3-BE-8hi">
+                                <rect key="frame" x="0.0" y="88" width="414" height="630"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="poC-iz-3Wx">
+                                    <size key="itemSize" width="414" height="621"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="9Is-Jf-eR7" customClass="OnboardingCollectionViewCell" customModule="WorkoutBee" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="621"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="e6g-wH-pAQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="621"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pRF-dR-4dg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="419"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="WorkoutBee is the best solution for making your body fit and health......." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MU-f7-Xih">
+                                                    <rect key="frame" x="36" y="543" width="361" height="70"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Best Solution for Body fit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BA-RA-L0N">
+                                                    <rect key="frame" x="58" y="445" width="298" height="90"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="pRF-dR-4dg" secondAttribute="trailing" id="4Ux-gU-Vgw"/>
+                                                <constraint firstItem="9MU-f7-Xih" firstAttribute="top" secondItem="6BA-RA-L0N" secondAttribute="bottom" constant="8" id="WFo-IV-Lei"/>
+                                                <constraint firstAttribute="bottom" secondItem="9MU-f7-Xih" secondAttribute="bottom" constant="8" id="WMU-xg-U13"/>
+                                                <constraint firstItem="6BA-RA-L0N" firstAttribute="top" secondItem="pRF-dR-4dg" secondAttribute="bottom" constant="26" id="XEV-0J-muC"/>
+                                                <constraint firstItem="pRF-dR-4dg" firstAttribute="leading" secondItem="e6g-wH-pAQ" secondAttribute="leading" id="udZ-tf-ngN"/>
+                                                <constraint firstItem="pRF-dR-4dg" firstAttribute="top" secondItem="e6g-wH-pAQ" secondAttribute="top" id="wqr-mY-Aez"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="414" height="621"/>
+                                        <connections>
+                                            <outlet property="slideDescription" destination="9MU-f7-Xih" id="HXM-7y-IWP"/>
+                                            <outlet property="slideImage" destination="pRF-dR-4dg" id="DB6-wL-G67"/>
+                                            <outlet property="slideTitleText" destination="6BA-RA-L0N" id="Dr3-Ax-AlV"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="1QX-1w-JYL" id="NAQ-b1-wXh"/>
+                                    <outlet property="delegate" destination="1QX-1w-JYL" id="r4o-4d-0iw"/>
+                                </connections>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="y1f-n3-04O">
+                                <rect key="frame" x="154" y="726" width="116" height="26"/>
+                                <color key="pageIndicatorTintColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.039215687659999998" green="0.039215687659999998" blue="0.031372550870000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjP-M1-BN0">
+                                <rect key="frame" x="140" y="812" width="144" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Next">
+                                    <color key="baseForegroundColor" red="0.039215687659999998" green="0.039215687659999998" blue="0.031372550870000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.12549020350000001" green="0.12549020350000001" blue="0.1176470518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="R0c-DY-1uw" eventType="touchUpInside" id="gFF-hg-jvg"/>
+                                    <action selector="buttonPressed:" destination="1QX-1w-JYL" eventType="touchUpInside" id="mbP-BU-cfY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bo0-1x-uen"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2w3-BE-8hi" firstAttribute="leading" secondItem="bo0-1x-uen" secondAttribute="leading" id="3fe-ZO-U0l"/>
+                            <constraint firstItem="2w3-BE-8hi" firstAttribute="trailing" secondItem="bo0-1x-uen" secondAttribute="trailing" id="bSL-5z-jGt"/>
+                            <constraint firstItem="2w3-BE-8hi" firstAttribute="top" secondItem="bo0-1x-uen" secondAttribute="top" id="odA-Ab-Tfg"/>
+                            <constraint firstItem="HjP-M1-BN0" firstAttribute="top" secondItem="y1f-n3-04O" secondAttribute="bottom" constant="60" id="qts-t1-dFh"/>
+                            <constraint firstItem="bo0-1x-uen" firstAttribute="trailing" secondItem="y1f-n3-04O" secondAttribute="trailing" constant="144" id="re2-kI-tVb"/>
+                            <constraint firstItem="y1f-n3-04O" firstAttribute="leading" secondItem="bo0-1x-uen" secondAttribute="leading" constant="154" id="zrV-er-Rcw"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="Button" destination="HjP-M1-BN0" id="4Iw-wJ-iiG"/>
+                            <outlet property="collectionView" destination="2w3-BE-8hi" id="lWP-ib-Sht"/>
+                            <outlet property="pageControler" destination="y1f-n3-04O" id="GRL-CQ-sAW"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="rKM-eU-tfq"/>
+                    <connections>
+                        <outlet property="Button" destination="HjP-M1-BN0" id="AUR-Hs-5RK"/>
+                        <outlet property="collectionView" destination="2w3-BE-8hi" id="l0C-bj-7tq"/>
+                        <outlet property="pageControler" destination="y1f-n3-04O" id="eed-Zr-nGQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uch-xU-eHu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1514" y="871"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uDa-37-2nO">
+            <objects>
+                <viewController id="T1J-YJ-5uf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lkr-de-NqP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xhQ-lf-AbD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tBZ-1o-Mbz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZuW-Id-r7i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3464" y="82"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BZs-jD-kH3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OEm-4Q-mUl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IbQ-xc-ihU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qFP-yK-cfD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iiU-t9-CSL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-313" y="82"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

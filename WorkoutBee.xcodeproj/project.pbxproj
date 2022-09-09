@@ -7,23 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182D3EB728CA308600370162 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D3EB628CA308600370162 /* OnboardViewController.swift */; };
+		184F3D0C28CB763400702EA2 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 184F3D0B28CB763400702EA2 /* Realm */; };
+		184F3D0E28CB763400702EA2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 184F3D0D28CB763400702EA2 /* RealmSwift */; };
+		1859836E28CA29660001A9C3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859836D28CA29660001A9C3 /* RootViewController.swift */; };
 		1899CDC328C7C80700AA4586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899CDC228C7C80700AA4586 /* AppDelegate.swift */; };
 		1899CDC528C7C80700AA4586 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899CDC428C7C80700AA4586 /* SceneDelegate.swift */; };
-		1899CDC728C7C80700AA4586 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899CDC628C7C80700AA4586 /* ViewController.swift */; };
+		1899CDC728C7C80700AA4586 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899CDC628C7C80700AA4586 /* OnboardingViewController.swift */; };
 		1899CDCA28C7C80700AA4586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1899CDC828C7C80700AA4586 /* Main.storyboard */; };
 		1899CDCC28C7C80A00AA4586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1899CDCB28C7C80A00AA4586 /* Assets.xcassets */; };
 		1899CDCF28C7C80A00AA4586 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1899CDCD28C7C80A00AA4586 /* LaunchScreen.storyboard */; };
+		1899CDDE28C9103500AA4586 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1899CDDD28C9103500AA4586 /* Lottie */; };
+		18B9F4C828C9184800B2F67C /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9F4C728C9184800B2F67C /* OnboardingCollectionViewCell.swift */; };
+		18B9F4CA28C91C5400B2F67C /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B9F4C928C91C5400B2F67C /* OnboardingSlide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		182D3EB628CA308600370162 /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		1859836D28CA29660001A9C3 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		1899CDBF28C7C80700AA4586 /* WorkoutBee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutBee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1899CDC228C7C80700AA4586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1899CDC428C7C80700AA4586 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1899CDC628C7C80700AA4586 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1899CDC628C7C80700AA4586 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		1899CDC928C7C80700AA4586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1899CDCB28C7C80A00AA4586 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1899CDCE28C7C80A00AA4586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1899CDD028C7C80A00AA4586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B9F4C728C9184800B2F67C /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		18B9F4C928C91C5400B2F67C /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184F3D0E28CB763400702EA2 /* RealmSwift in Frameworks */,
+				184F3D0C28CB763400702EA2 /* Realm in Frameworks */,
+				1899CDDE28C9103500AA4586 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +72,11 @@
 			children = (
 				1899CDC228C7C80700AA4586 /* AppDelegate.swift */,
 				1899CDC428C7C80700AA4586 /* SceneDelegate.swift */,
-				1899CDC628C7C80700AA4586 /* ViewController.swift */,
+				1899CDC628C7C80700AA4586 /* OnboardingViewController.swift */,
+				18B9F4C728C9184800B2F67C /* OnboardingCollectionViewCell.swift */,
+				18B9F4C928C91C5400B2F67C /* OnboardingSlide.swift */,
+				182D3EB628CA308600370162 /* OnboardViewController.swift */,
+				1859836D28CA29660001A9C3 /* RootViewController.swift */,
 				1899CDC828C7C80700AA4586 /* Main.storyboard */,
 				1899CDCB28C7C80A00AA4586 /* Assets.xcassets */,
 				1899CDCD28C7C80A00AA4586 /* LaunchScreen.storyboard */,
@@ -83,6 +101,11 @@
 			dependencies = (
 			);
 			name = WorkoutBee;
+			packageProductDependencies = (
+				1899CDDD28C9103500AA4586 /* Lottie */,
+				184F3D0B28CB763400702EA2 /* Realm */,
+				184F3D0D28CB763400702EA2 /* RealmSwift */,
+			);
 			productName = WorkoutBee;
 			productReference = 1899CDBF28C7C80700AA4586 /* WorkoutBee.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,10 @@
 				Base,
 			);
 			mainGroup = 1899CDB628C7C80700AA4586;
+			packageReferences = (
+				1899CDDC28C9103500AA4586 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				184F3D0A28CB763400702EA2 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 1899CDC028C7C80700AA4586 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1899CDC728C7C80700AA4586 /* ViewController.swift in Sources */,
+				18B9F4CA28C91C5400B2F67C /* OnboardingSlide.swift in Sources */,
+				182D3EB728CA308600370162 /* OnboardViewController.swift in Sources */,
+				1899CDC728C7C80700AA4586 /* OnboardingViewController.swift in Sources */,
+				1859836E28CA29660001A9C3 /* RootViewController.swift in Sources */,
 				1899CDC328C7C80700AA4586 /* AppDelegate.swift in Sources */,
 				1899CDC528C7C80700AA4586 /* SceneDelegate.swift in Sources */,
+				18B9F4C828C9184800B2F67C /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +389,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		184F3D0A28CB763400702EA2 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		1899CDDC28C9103500AA4586 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		184F3D0B28CB763400702EA2 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 184F3D0A28CB763400702EA2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		184F3D0D28CB763400702EA2 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 184F3D0A28CB763400702EA2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		1899CDDD28C9103500AA4586 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1899CDDC28C9103500AA4586 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1899CDB728C7C80700AA4586 /* Project object */;
 }
