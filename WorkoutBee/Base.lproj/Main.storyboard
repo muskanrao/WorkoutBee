@@ -243,21 +243,49 @@
             </objects>
             <point key="canvasLocation" x="1514" y="871"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="uDa-37-2nO">
             <objects>
-                <viewController id="T1J-YJ-5uf" sceneMemberID="viewController">
+                <viewController id="T1J-YJ-5uf" customClass="RegisterViewController" customModule="WorkoutBee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lkr-de-NqP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N2A-7S-AXl">
+                                <rect key="frame" x="92" y="254" width="221" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jza-rr-iyO">
+                                <rect key="frame" x="92" y="324" width="221" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aV7-9K-Dhn">
+                                <rect key="frame" x="92" y="419" width="246" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                <connections>
+                                    <action selector="RegisterPressed:" destination="T1J-YJ-5uf" eventType="touchUpInside" id="jGc-1z-eIB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="xhQ-lf-AbD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="tBZ-1o-Mbz"/>
+                    <connections>
+                        <outlet property="RegisterButton" destination="aV7-9K-Dhn" id="veY-Po-8Aj"/>
+                        <outlet property="emailText" destination="N2A-7S-AXl" id="coP-VR-e1O"/>
+                        <outlet property="passwordText" destination="Jza-rr-iyO" id="geH-i2-WPz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZuW-Id-r7i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3464" y="82"/>
+            <point key="canvasLocation" x="2421.739130434783" y="87.723214285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BZs-jD-kH3">

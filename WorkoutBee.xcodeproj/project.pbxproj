@@ -11,6 +11,8 @@
 		184F3D0C28CB763400702EA2 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 184F3D0B28CB763400702EA2 /* Realm */; };
 		184F3D0E28CB763400702EA2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 184F3D0D28CB763400702EA2 /* RealmSwift */; };
 		1859836E28CA29660001A9C3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859836D28CA29660001A9C3 /* RootViewController.swift */; };
+		188BD1C028CBBDE90073B643 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BD1BF28CBBDE90073B643 /* LoginViewController.swift */; };
+		188BD1C228CBBDFC0073B643 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BD1C128CBBDFC0073B643 /* RegisterViewController.swift */; };
 		1899CDC328C7C80700AA4586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899CDC228C7C80700AA4586 /* AppDelegate.swift */; };
 		1899CDC528C7C80700AA4586 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899CDC428C7C80700AA4586 /* SceneDelegate.swift */; };
 		1899CDC728C7C80700AA4586 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899CDC628C7C80700AA4586 /* OnboardingViewController.swift */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		182D3EB628CA308600370162 /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		1859836D28CA29660001A9C3 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		188BD1BF28CBBDE90073B643 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		188BD1C128CBBDFC0073B643 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1899CDBF28C7C80700AA4586 /* WorkoutBee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutBee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1899CDC228C7C80700AA4586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1899CDC428C7C80700AA4586 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		188BD1BD28CBBDB90073B643 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				18B9F4C728C9184800B2F67C /* OnboardingCollectionViewCell.swift */,
+				18B9F4C928C91C5400B2F67C /* OnboardingSlide.swift */,
+				182D3EB628CA308600370162 /* OnboardViewController.swift */,
+				1899CDC628C7C80700AA4586 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		188BD1BE28CBBDD50073B643 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				188BD1BF28CBBDE90073B643 /* LoginViewController.swift */,
+				188BD1C128CBBDFC0073B643 /* RegisterViewController.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
 		1899CDB628C7C80700AA4586 = {
 			isa = PBXGroup;
 			children = (
@@ -72,10 +96,8 @@
 			children = (
 				1899CDC228C7C80700AA4586 /* AppDelegate.swift */,
 				1899CDC428C7C80700AA4586 /* SceneDelegate.swift */,
-				1899CDC628C7C80700AA4586 /* OnboardingViewController.swift */,
-				18B9F4C728C9184800B2F67C /* OnboardingCollectionViewCell.swift */,
-				18B9F4C928C91C5400B2F67C /* OnboardingSlide.swift */,
-				182D3EB628CA308600370162 /* OnboardViewController.swift */,
+				188BD1BE28CBBDD50073B643 /* Registration */,
+				188BD1BD28CBBDB90073B643 /* Onboarding */,
 				1859836D28CA29660001A9C3 /* RootViewController.swift */,
 				1899CDC828C7C80700AA4586 /* Main.storyboard */,
 				1899CDCB28C7C80A00AA4586 /* Assets.xcassets */,
@@ -165,10 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188BD1C228CBBDFC0073B643 /* RegisterViewController.swift in Sources */,
 				18B9F4CA28C91C5400B2F67C /* OnboardingSlide.swift in Sources */,
 				182D3EB728CA308600370162 /* OnboardViewController.swift in Sources */,
 				1899CDC728C7C80700AA4586 /* OnboardingViewController.swift in Sources */,
 				1859836E28CA29660001A9C3 /* RootViewController.swift in Sources */,
+				188BD1C028CBBDE90073B643 /* LoginViewController.swift in Sources */,
 				1899CDC328C7C80700AA4586 /* AppDelegate.swift in Sources */,
 				1899CDC528C7C80700AA4586 /* SceneDelegate.swift in Sources */,
 				18B9F4C828C9184800B2F67C /* OnboardingCollectionViewCell.swift in Sources */,
