@@ -6,13 +6,13 @@
 //
 
 import UIKit
-import Lottie
+//import Lottie
 
 class OnboardingViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource{
    
     
 
-    var animationView : AnimationView?
+   // var animationView : AnimationView?
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControler: UIPageControl!

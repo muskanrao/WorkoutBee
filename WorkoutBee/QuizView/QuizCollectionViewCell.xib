@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,29 +24,33 @@
                                 <rect key="frame" x="8" y="0.0" width="339" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.05882352591" green="0.090196087960000004" blue="0.1647058874" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yJ1-T9-GL2">
-                                <rect key="frame" x="76" y="65" width="203" height="30"/>
+                                <rect key="frame" x="98" y="65" width="163" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <menu key="menu" id="MXR-Uq-8i0">
                                     <children>
                                         <command title="Item 1" id="4ex-Mb-64h"/>
                                         <command title="Item 2" id="Jq9-F7-7Sv"/>
                                     </children>
                                 </menu>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.05882352591" green="0.090196087960000004" blue="0.1647058874" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
-                                    <action selector="buttonClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ekN-CX-RQu"/>
+                                    <action selector="popupButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="hCJ-em-ets"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.64705882349999999" green="0.78823529410000004" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.69411764710000001" green="0.69803921570000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="ryT-5p-0Hn" secondAttribute="bottom" id="5qY-Pk-31h"/>
                 <constraint firstItem="ryT-5p-0Hn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9ZJ-XL-lZA"/>
@@ -62,9 +65,4 @@
             <point key="canvasLocation" x="277.536231884058" y="62.611607142857139"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
