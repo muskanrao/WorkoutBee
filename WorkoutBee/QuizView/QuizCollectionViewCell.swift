@@ -32,7 +32,7 @@ class QuizCollectionViewCell: UICollectionViewCell {
         
         
         let optionClosure = {(action: UIAction) in
-            if  "Tell us about your excercise strength" == stack.question{
+            if  "Tell us about your excercise strength ?" == stack.question{
                 QuizCollectionViewCell.buttonOutput1 = action.title
                 print(QuizCollectionViewCell.buttonOutput1)
             }

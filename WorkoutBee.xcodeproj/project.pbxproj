@@ -17,6 +17,25 @@
 		18561B8828F345140016023B /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 18561B8728F345140016023B /* FirebaseMessaging */; };
 		18561B8A28F345140016023B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 18561B8928F345140016023B /* FirebaseStorage */; };
 		1859836E28CA29660001A9C3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859836D28CA29660001A9C3 /* RootViewController.swift */; };
+		18624CBD29059A3F00BB0921 /* seated-abs-circles.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CAC29059A3E00BB0921 /* seated-abs-circles.json */; };
+		18624CBE29059A3F00BB0921 /* frog-press.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CAD29059A3F00BB0921 /* frog-press.json */; };
+		18624CBF29059A3F00BB0921 /* jumping-squats.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CAE29059A3F00BB0921 /* jumping-squats.json */; };
+		18624CC029059A3F00BB0921 /* lunge.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CAF29059A3F00BB0921 /* lunge.json */; };
+		18624CC129059A3F00BB0921 /* step-up-on-chair.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CB029059A3F00BB0921 /* step-up-on-chair.json */; };
+		18624CC229059A3F00BB0921 /* staggered-push-ups.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CB129059A3F00BB0921 /* staggered-push-ups.json */; };
+		18624CC329059A3F00BB0921 /* everse-crunches.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CB229059A3F00BB0921 /* everse-crunches.json */; };
+		18624CC429059A3F00BB0921 /* squat-kick.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CB329059A3F00BB0921 /* squat-kick.json */; };
+		18624CC529059A3F00BB0921 /* military-push-ups.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CB429059A3F00BB0921 /* military-push-ups.json */; };
+		18624CC629059A3F00BB0921 /* squat-kicks.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CB529059A3F00BB0921 /* squat-kicks.json */; };
+		18624CC729059A3F00BB0921 /* squat-reach.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CB629059A3F00BB0921 /* squat-reach.json */; };
+		18624CC829059A3F00BB0921 /* shoulder-stretch.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CB729059A3F00BB0921 /* shoulder-stretch.json */; };
+		18624CC929059A3F00BB0921 /* t-plank-excercise.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CB829059A3F00BB0921 /* t-plank-excercise.json */; };
+		18624CCA29059A3F00BB0921 /* cobras.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CB929059A3F00BB0921 /* cobras.json */; };
+		18624CCB29059A3F00BB0921 /* single-leg-hip-rotation.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CBA29059A3F00BB0921 /* single-leg-hip-rotation.json */; };
+		18624CCC29059A3F00BB0921 /* inchworm.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CBB29059A3F00BB0921 /* inchworm.json */; };
+		18624CCD29059A3F00BB0921 /* punches.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CBC29059A3F00BB0921 /* punches.json */; };
+		18624CCF29059A4C00BB0921 /* squats-exercise-6527640.html in Resources */ = {isa = PBXBuildFile; fileRef = 18624CCE29059A4C00BB0921 /* squats-exercise-6527640.html */; };
+		18624CD12905A2B600BB0921 /* skipping.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CD02905A2B600BB0921 /* skipping.json */; };
 		1880EA8328D893F3001267CC /* AssigmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880EA8228D893F3001267CC /* AssigmentViewController.swift */; };
 		188BD1C028CBBDE90073B643 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BD1BF28CBBDE90073B643 /* LoginViewController.swift */; };
 		188BD1C228CBBDFC0073B643 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BD1C128CBBDFC0073B643 /* RegisterViewController.swift */; };
@@ -47,6 +66,25 @@
 		182D3EB628CA308600370162 /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		184BE7B128FF183E002CCFD2 /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
 		1859836D28CA29660001A9C3 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		18624CAC29059A3E00BB0921 /* seated-abs-circles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "seated-abs-circles.json"; sourceTree = "<group>"; };
+		18624CAD29059A3F00BB0921 /* frog-press.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "frog-press.json"; sourceTree = "<group>"; };
+		18624CAE29059A3F00BB0921 /* jumping-squats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "jumping-squats.json"; sourceTree = "<group>"; };
+		18624CAF29059A3F00BB0921 /* lunge.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lunge.json; sourceTree = "<group>"; };
+		18624CB029059A3F00BB0921 /* step-up-on-chair.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "step-up-on-chair.json"; sourceTree = "<group>"; };
+		18624CB129059A3F00BB0921 /* staggered-push-ups.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "staggered-push-ups.json"; sourceTree = "<group>"; };
+		18624CB229059A3F00BB0921 /* everse-crunches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "everse-crunches.json"; sourceTree = "<group>"; };
+		18624CB329059A3F00BB0921 /* squat-kick.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "squat-kick.json"; sourceTree = "<group>"; };
+		18624CB429059A3F00BB0921 /* military-push-ups.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "military-push-ups.json"; sourceTree = "<group>"; };
+		18624CB529059A3F00BB0921 /* squat-kicks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "squat-kicks.json"; sourceTree = "<group>"; };
+		18624CB629059A3F00BB0921 /* squat-reach.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "squat-reach.json"; sourceTree = "<group>"; };
+		18624CB729059A3F00BB0921 /* shoulder-stretch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "shoulder-stretch.json"; sourceTree = "<group>"; };
+		18624CB829059A3F00BB0921 /* t-plank-excercise.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "t-plank-excercise.json"; sourceTree = "<group>"; };
+		18624CB929059A3F00BB0921 /* cobras.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cobras.json; sourceTree = "<group>"; };
+		18624CBA29059A3F00BB0921 /* single-leg-hip-rotation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "single-leg-hip-rotation.json"; sourceTree = "<group>"; };
+		18624CBB29059A3F00BB0921 /* inchworm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = inchworm.json; sourceTree = "<group>"; };
+		18624CBC29059A3F00BB0921 /* punches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = punches.json; sourceTree = "<group>"; };
+		18624CCE29059A4C00BB0921 /* squats-exercise-6527640.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "squats-exercise-6527640.html"; sourceTree = "<group>"; };
+		18624CD02905A2B600BB0921 /* skipping.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = skipping.json; sourceTree = "<group>"; };
 		1880EA8228D893F3001267CC /* AssigmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssigmentViewController.swift; sourceTree = "<group>"; };
 		188BD1BF28CBBDE90073B643 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		188BD1C128CBBDFC0073B643 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +134,26 @@
 		183580492901C39C0016BA2F /* Animation Files */ = {
 			isa = PBXGroup;
 			children = (
+				18624CD02905A2B600BB0921 /* skipping.json */,
 				18F7870B28FFF7EC0058DDD0 /* jumping-jack.json */,
+				18624CAE29059A3F00BB0921 /* jumping-squats.json */,
+				18624CBC29059A3F00BB0921 /* punches.json */,
+				18624CAD29059A3F00BB0921 /* frog-press.json */,
+				18624CB329059A3F00BB0921 /* squat-kick.json */,
+				18624CB929059A3F00BB0921 /* cobras.json */,
+				18624CB229059A3F00BB0921 /* everse-crunches.json */,
+				18624CBB29059A3F00BB0921 /* inchworm.json */,
+				18624CAF29059A3F00BB0921 /* lunge.json */,
+				18624CB429059A3F00BB0921 /* military-push-ups.json */,
+				18624CAC29059A3E00BB0921 /* seated-abs-circles.json */,
+				18624CB729059A3F00BB0921 /* shoulder-stretch.json */,
+				18624CCE29059A4C00BB0921 /* squats-exercise-6527640.html */,
+				18624CBA29059A3F00BB0921 /* single-leg-hip-rotation.json */,
+				18624CB529059A3F00BB0921 /* squat-kicks.json */,
+				18624CB629059A3F00BB0921 /* squat-reach.json */,
+				18624CB129059A3F00BB0921 /* staggered-push-ups.json */,
+				18624CB029059A3F00BB0921 /* step-up-on-chair.json */,
+				18624CB829059A3F00BB0921 /* t-plank-excercise.json */,
 			);
 			path = "Animation Files";
 			sourceTree = "<group>";
@@ -267,9 +324,28 @@
 				18F7870C28FFF7EC0058DDD0 /* jumping-jack.json in Resources */,
 				18A3615828FE8FFF00A1839D /* CollectionViewCell.xib in Resources */,
 				1899CDCF28C7C80A00AA4586 /* LaunchScreen.storyboard in Resources */,
+				18624CC529059A3F00BB0921 /* military-push-ups.json in Resources */,
+				18624CC929059A3F00BB0921 /* t-plank-excercise.json in Resources */,
+				18624CC429059A3F00BB0921 /* squat-kick.json in Resources */,
+				18624CBF29059A3F00BB0921 /* jumping-squats.json in Resources */,
 				189107C928CD2D3200FC5977 /* GoogleService-Info.plist in Resources */,
+				18624CCA29059A3F00BB0921 /* cobras.json in Resources */,
+				18624CBE29059A3F00BB0921 /* frog-press.json in Resources */,
+				18624CD12905A2B600BB0921 /* skipping.json in Resources */,
+				18624CC829059A3F00BB0921 /* shoulder-stretch.json in Resources */,
+				18624CCF29059A4C00BB0921 /* squats-exercise-6527640.html in Resources */,
+				18624CCB29059A3F00BB0921 /* single-leg-hip-rotation.json in Resources */,
+				18624CC729059A3F00BB0921 /* squat-reach.json in Resources */,
+				18624CC329059A3F00BB0921 /* everse-crunches.json in Resources */,
 				189107DF28CD3AD000FC5977 /* QuizCollectionViewCell.xib in Resources */,
 				1899CDCC28C7C80A00AA4586 /* Assets.xcassets in Resources */,
+				18624CCD29059A3F00BB0921 /* punches.json in Resources */,
+				18624CC229059A3F00BB0921 /* staggered-push-ups.json in Resources */,
+				18624CC029059A3F00BB0921 /* lunge.json in Resources */,
+				18624CBD29059A3F00BB0921 /* seated-abs-circles.json in Resources */,
+				18624CCC29059A3F00BB0921 /* inchworm.json in Resources */,
+				18624CC129059A3F00BB0921 /* step-up-on-chair.json in Resources */,
+				18624CC629059A3F00BB0921 /* squat-kicks.json in Resources */,
 				1899CDCA28C7C80700AA4586 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

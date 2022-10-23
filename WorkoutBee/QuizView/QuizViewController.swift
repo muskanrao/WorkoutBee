@@ -16,6 +16,7 @@ class QuizViewController: UIViewController  ,UICollectionViewDelegate,UICollecti
     @IBOutlet weak var heightValue: UILabel!
     @IBOutlet weak var weightSlider: UISlider!
     @IBOutlet weak var weightValue: UILabel!
+    @IBOutlet weak var registerButton: UIButton!
     
     var firstAns = ""
     var secondAns = ""
@@ -31,10 +32,10 @@ class QuizViewController: UIViewController  ,UICollectionViewDelegate,UICollecti
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(exercise)
         heightValue.text = "0"
         weightValue.text = "0"
-        quiz = [QuizModel(question: "Tell us about your excercise strength", option1: "Beginner", option2: "Intermidate", option3: "Advanced"),
+        quiz = [QuizModel(question: "Tell us about your excercise strength ?", option1: "Beginner", option2: "Intermidate", option3: "Advanced"),
                 QuizModel(question: "What type of physique you want ?" , option1: "Weight loss", option2: "Muscle gain + Fat loss", option3: "Weight Gain"),
                 QuizModel(question: "Which is your preferable time for workout ?", option1: "Morning", option2: "Afternoon", option3: "Evening")
         ]
@@ -43,6 +44,14 @@ class QuizViewController: UIViewController  ,UICollectionViewDelegate,UICollecti
         print(firstAns)
         print(secondAns)
         print(thirdAns)
+        registerButton.layer.cornerRadius = 10
+        registerButton.layer.borderWidth = 0.2
+        registerButton.layer.shadowColor = UIColor.white.cgColor
+        registerButton.layer.shadowOffset = CGSize(width: 0, height: 0)
+        registerButton.layer.shadowRadius = 5.0
+        registerButton.layer.shadowOpacity = 1
+        registerButton.layer.masksToBounds = false
+        
     }
     
     
@@ -98,25 +107,19 @@ class QuizViewController: UIViewController  ,UICollectionViewDelegate,UICollecti
                 thirdAns = cell.optionButotn.currentTitle!
             }
 
-            cell.layer.cornerRadius = 10.0
-            cell.layer.borderWidth = 0.2
-            cell.layer.shadowColor = UIColor.white.cgColor
-            cell.layer.shadowOffset = CGSize(width: 0, height: 0)
-            cell.layer.shadowRadius = 5.0
-            cell.layer.shadowOpacity = 1
-            cell.layer.masksToBounds = false
+            cell.layer.cornerRadius = 15
             return cell
         case textCollectionView:
             let cell = textCollectionView.dequeueReusableCell(withReuseIdentifier: Quiz2CollectionViewCell.identifier, for: indexPath) as! Quiz2CollectionViewCell
             cell.setup()
-            
-            cell.layer.cornerRadius = 10.0
+            cell.layer.cornerRadius = 15
+            /*cell.layer.cornerRadius = 10.0
             cell.layer.borderWidth = 0.2
             cell.layer.shadowColor = UIColor.white.cgColor
             cell.layer.shadowOffset = CGSize(width: 0, height: 0)
             cell.layer.shadowRadius = 5.0
             cell.layer.shadowOpacity = 1
-            cell.layer.masksToBounds = false
+            cell.layer.masksToBounds = false*/
             return cell
         default:
             return UICollectionViewCell()
@@ -128,6 +131,7 @@ class QuizViewController: UIViewController  ,UICollectionViewDelegate,UICollecti
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
       
+        
        
         
     }
