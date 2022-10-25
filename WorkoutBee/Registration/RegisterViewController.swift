@@ -13,19 +13,20 @@ import FirebaseFirestore
 class RegisterViewController: UIViewController {
 
     @IBOutlet weak var emailText: UITextField!
-    @IBOutlet weak var passwordText: UITextField!
     @IBOutlet weak var RegisterButton: UIButton!
+    @IBOutlet weak var passwordText: UITextField!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        RegisterButton.layer.cornerRadius = 30
+        passwordText.layer.cornerRadius = 30
+        emailText.layer.cornerRadius = 30
         
         
     }
 
-    
     @IBAction func RegisterPressed(_ sender: UIButton) {
-        
         if let email = emailText.text ,  let password = passwordText.text {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
               
@@ -47,7 +48,6 @@ class RegisterViewController: UIViewController {
                 
             }
         }
-        
     }
     
 

@@ -107,7 +107,8 @@ class QuizViewController: UIViewController  ,UICollectionViewDelegate,UICollecti
                 thirdAns = cell.optionButotn.currentTitle!
             }
 
-            cell.layer.cornerRadius = 10.0
+            cell.layer.cornerRadius = 15.0
+            cell.layer.cornerRadius = 15.0
             cell.layer.borderWidth = 0.2
             cell.layer.shadowColor = UIColor.white.cgColor
             cell.layer.shadowOffset = CGSize(width: 0, height: 0)
@@ -119,7 +120,7 @@ class QuizViewController: UIViewController  ,UICollectionViewDelegate,UICollecti
             let cell = textCollectionView.dequeueReusableCell(withReuseIdentifier: Quiz2CollectionViewCell.identifier, for: indexPath) as! Quiz2CollectionViewCell
             cell.setup()
            // cell.layer.cornerRadius = 15
-            cell.layer.cornerRadius = 10.0
+            cell.layer.cornerRadius = 15.0
             cell.layer.borderWidth = 0.2
             cell.layer.shadowColor = UIColor.white.cgColor
             cell.layer.shadowOffset = CGSize(width: 0, height: 0)

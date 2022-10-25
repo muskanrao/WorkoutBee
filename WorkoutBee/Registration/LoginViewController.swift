@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
 
     
     @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var passwordText: UITextField!
     
     //let db = Firestore.firestore()
@@ -20,6 +21,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        emailText.layer.cornerRadius = 30
+        passwordText.layer.cornerRadius = 30
+        loginButton.layer.cornerRadius = 30
         
     }
     

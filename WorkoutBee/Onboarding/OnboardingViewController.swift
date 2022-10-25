@@ -19,9 +19,9 @@ class OnboardingViewController: UIViewController , UICollectionViewDelegate, UIC
     @IBOutlet weak var Button: UIButton!
     
     var slide : [OnboadingSlide] = [
-        .init(title: "The only best solution for body fit.", description: "The fit body needs a best envirenment for healthy and a ", image: UIImage.init(named: "ls1")!),
-        .init(title: "Solution for a healthy routine with a week plan.", description: "The application will provide a weekly exercise routine for body boost.", image: UIImage.init(named: "ls1")!),
-        .init(title: "Choose your own body type.", description: "The application will allow to choose body type and best workout solutions.", image: UIImage.init(named: "ls1")!)
+        .init(title: "The only best solution for body fit.", description: "The fit body needs a best envirenment for healthy and a ", image: UIImage.init(named: "w1")!),
+        .init(title: "Solution for a healthy routine with a week plan.", description: "The application will provide a weekly exercise routine for body boost.", image: UIImage.init(named: "w3")!),
+        .init(title: "Choose your own body type.", description: "The application will allow to choose body type and best workout solutions.", image: UIImage.init(named: "w2")!)
     ]
     
     var currentPage = 0 {

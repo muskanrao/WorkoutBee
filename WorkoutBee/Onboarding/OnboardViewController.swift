@@ -11,6 +11,7 @@ class OnboardViewController: UIViewController, UICollectionViewDelegate,UICollec
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControler: UIPageControl!
+    
     @IBOutlet weak var Button: UIButton!
     
     var slide : [OnboadingSlide] = []
@@ -31,6 +32,13 @@ class OnboardViewController: UIViewController, UICollectionViewDelegate,UICollec
         super.viewDidLoad()
         
         self.slideValue()
+        Button.layer.cornerRadius = 20
+        Button.layer.borderWidth = 0.2
+        Button.layer.shadowColor = UIColor.white.cgColor
+        Button.layer.shadowOffset = CGSize(width: 0, height: 0)
+        Button.layer.shadowRadius = 5.0
+        Button.layer.shadowOpacity = 1
+        Button.layer.masksToBounds = false
         pageControler.numberOfPages = slide.count
         print(slide.count)
         
@@ -39,15 +47,14 @@ class OnboardViewController: UIViewController, UICollectionViewDelegate,UICollec
     func slideValue(){
         slide = [
         
-            OnboadingSlide(title: "The only best solution for body fit.", description: "The fit body needs a best envirenment for healthy and a ", image: UIImage.init(named: "ls1")!),
-            OnboadingSlide(title: "Solution for a healthy routine with a week plan.", description: "The application will provide a weekly exercise routine for body boost.", image: UIImage.init(named: "ls1")!),
-            OnboadingSlide(title: "Choose your own body type.", description: "The application will allow to choose body type and best workout solutions.", image: UIImage.init(named: "ls1")!)
+            OnboadingSlide(title: "The only best solution for body fit.", description: "The fit body creates a best healthy and a stressfree environment.", image: UIImage.init(named: "w1")!),
+            OnboadingSlide(title: "Solution for a healthy routine with a week plan.", description: "The application will provide a weekly exercise routine for body boost.", image: UIImage.init(named: "w3")!),
+            OnboadingSlide(title: "Choose your own body type.", description: "The application will allow to choose body type and best workout solutions.", image: UIImage.init(named: "w2")!)
             
         ]
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        
         if currentPage == slide.count - 1{
             performSegue(withIdentifier: "Signup", sender: self)
             
@@ -59,7 +66,7 @@ class OnboardViewController: UIViewController, UICollectionViewDelegate,UICollec
             
         }
     }
- 
+  
     
     
    // MARK: -Data Source

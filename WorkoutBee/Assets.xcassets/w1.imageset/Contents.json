@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Free Home Workouts + Affordable Home Workout Equipment to Make the Most of Your Quarantine Workouts – Sunseeking in Style.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Free Home Workouts + Affordable Home Workout Equipment to Make the Most of Your Quarantine Workouts – Sunseeking in Style@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Free Home Workouts + Affordable Home Workout Equipment to Make the Most of Your Quarantine Workouts – Sunseeking in Style@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

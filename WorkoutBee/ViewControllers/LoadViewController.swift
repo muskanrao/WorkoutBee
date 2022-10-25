@@ -22,7 +22,7 @@ class LoadViewController: UIViewController {
     }
     
     private func load(){
-        navigationController?.navigationBar.backgroundColor = .lightGray
+        //navigationController?.navigationBar.backgroundColor = .lightGray
         workoutLabel.text = workoutName
         textLabel.text = steps
         animationView = .init(name: animation)

@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		182D3EB728CA308600370162 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D3EB628CA308600370162 /* OnboardViewController.swift */; };
+		184275922908891E00AFA5A3 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1842758F2908891E00AFA5A3 /* image1.png */; };
+		184275932908891E00AFA5A3 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 184275902908891E00AFA5A3 /* image2.jpg */; };
+		184275942908891E00AFA5A3 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 184275912908891E00AFA5A3 /* image3.jpg */; };
+		1842759829088ABF00AFA5A3 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1842759529088ABF00AFA5A3 /* image4.jpg */; };
+		1842759929088ABF00AFA5A3 /* image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1842759629088ABF00AFA5A3 /* image6.jpg */; };
+		1842759A29088ABF00AFA5A3 /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1842759729088ABF00AFA5A3 /* image5.jpg */; };
+		1842759C29088F0400AFA5A3 /* w13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1842759B29088F0300AFA5A3 /* w13.jpg */; };
+		1842759F29088F0D00AFA5A3 /* w11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1842759D29088F0D00AFA5A3 /* w11.jpg */; };
+		184275A029088F0D00AFA5A3 /* w12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1842759E29088F0D00AFA5A3 /* w12.jpg */; };
 		184BE7B228FF183E002CCFD2 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BE7B128FF183E002CCFD2 /* LoadViewController.swift */; };
 		18561B7E28F345140016023B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 18561B7D28F345140016023B /* FirebaseAnalytics */; };
 		18561B8028F345140016023B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 18561B7F28F345140016023B /* FirebaseAuth */; };
@@ -36,6 +45,15 @@
 		18624CCD29059A3F00BB0921 /* punches.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CBC29059A3F00BB0921 /* punches.json */; };
 		18624CCF29059A4C00BB0921 /* squats-exercise-6527640.html in Resources */ = {isa = PBXBuildFile; fileRef = 18624CCE29059A4C00BB0921 /* squats-exercise-6527640.html */; };
 		18624CD12905A2B600BB0921 /* skipping.json in Resources */ = {isa = PBXBuildFile; fileRef = 18624CD02905A2B600BB0921 /* skipping.json */; };
+		1863CCAF29071DBA00222355 /* root.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863CCAE29071DB900222355 /* root.png */; };
+		1863CCB6290720DF00222355 /* root2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863CCB5290720DF00222355 /* root2.png */; };
+		1863CCB8290720EC00222355 /* root3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863CCB7290720EC00222355 /* root3.png */; };
+		1863CCBB2907236500222355 /* log1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863CCB92907236500222355 /* log1.png */; };
+		1863CCBC2907236500222355 /* log2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863CCBA2907236500222355 /* log2.png */; };
+		1863CCBE290723DE00222355 /* reg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863CCBD290723DE00222355 /* reg1.png */; };
+		1863CCC0290723E400222355 /* reg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863CCBF290723E400222355 /* reg2.png */; };
+		1863CCC229072C8600222355 /* i1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1863CCC129072C8600222355 /* i1.jpg */; };
+		1863CCC429072C8D00222355 /* i2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863CCC329072C8D00222355 /* i2.png */; };
 		1880EA8328D893F3001267CC /* AssigmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880EA8228D893F3001267CC /* AssigmentViewController.swift */; };
 		188BD1C028CBBDE90073B643 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BD1BF28CBBDE90073B643 /* LoginViewController.swift */; };
 		188BD1C228CBBDFC0073B643 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BD1C128CBBDFC0073B643 /* RegisterViewController.swift */; };
@@ -64,6 +82,17 @@
 
 /* Begin PBXFileReference section */
 		182D3EB628CA308600370162 /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		1842758F2908891E00AFA5A3 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
+		184275902908891E00AFA5A3 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		184275912908891E00AFA5A3 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		1842759529088ABF00AFA5A3 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
+		1842759629088ABF00AFA5A3 /* image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image6.jpg; sourceTree = "<group>"; };
+		1842759729088ABF00AFA5A3 /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image5.jpg; sourceTree = "<group>"; };
+		1842759B29088F0300AFA5A3 /* w13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = w13.jpg; sourceTree = "<group>"; };
+		1842759D29088F0D00AFA5A3 /* w11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = w11.jpg; sourceTree = "<group>"; };
+		1842759E29088F0D00AFA5A3 /* w12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = w12.jpg; sourceTree = "<group>"; };
+		184275A2290890C300AFA5A3 /* root2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = root2.png; sourceTree = "<group>"; };
+		184275A3290890F100AFA5A3 /* root2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = root2.png; path = "../Animation Files/root2.png"; sourceTree = "<group>"; };
 		184BE7B128FF183E002CCFD2 /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
 		1859836D28CA29660001A9C3 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		18624CAC29059A3E00BB0921 /* seated-abs-circles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "seated-abs-circles.json"; sourceTree = "<group>"; };
@@ -85,6 +114,15 @@
 		18624CBC29059A3F00BB0921 /* punches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = punches.json; sourceTree = "<group>"; };
 		18624CCE29059A4C00BB0921 /* squats-exercise-6527640.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "squats-exercise-6527640.html"; sourceTree = "<group>"; };
 		18624CD02905A2B600BB0921 /* skipping.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = skipping.json; sourceTree = "<group>"; };
+		1863CCAE29071DB900222355 /* root.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = root.png; sourceTree = "<group>"; };
+		1863CCB5290720DF00222355 /* root2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = root2.png; path = ../../../root2.png; sourceTree = "<group>"; };
+		1863CCB7290720EC00222355 /* root3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = root3.png; sourceTree = "<group>"; };
+		1863CCB92907236500222355 /* log1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = log1.png; sourceTree = "<group>"; };
+		1863CCBA2907236500222355 /* log2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = log2.png; sourceTree = "<group>"; };
+		1863CCBD290723DE00222355 /* reg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reg1.png; sourceTree = "<group>"; };
+		1863CCBF290723E400222355 /* reg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reg2.png; sourceTree = "<group>"; };
+		1863CCC129072C8600222355 /* i1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i1.jpg; sourceTree = "<group>"; };
+		1863CCC329072C8D00222355 /* i2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = i2.png; sourceTree = "<group>"; };
 		1880EA8228D893F3001267CC /* AssigmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssigmentViewController.swift; sourceTree = "<group>"; };
 		188BD1BF28CBBDE90073B643 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		188BD1C128CBBDFC0073B643 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +194,32 @@
 				18624CB829059A3F00BB0921 /* t-plank-excercise.json */,
 			);
 			path = "Animation Files";
+			sourceTree = "<group>";
+		};
+		184275A12908908D00AFA5A3 /* Workout Images */ = {
+			isa = PBXGroup;
+			children = (
+				184275A3290890F100AFA5A3 /* root2.png */,
+				1842758F2908891E00AFA5A3 /* image1.png */,
+				1842759D29088F0D00AFA5A3 /* w11.jpg */,
+				1842759E29088F0D00AFA5A3 /* w12.jpg */,
+				1842759B29088F0300AFA5A3 /* w13.jpg */,
+				1842759529088ABF00AFA5A3 /* image4.jpg */,
+				184275902908891E00AFA5A3 /* image2.jpg */,
+				184275912908891E00AFA5A3 /* image3.jpg */,
+				1863CCBD290723DE00222355 /* reg1.png */,
+				1863CCC329072C8D00222355 /* i2.png */,
+				1863CCC129072C8600222355 /* i1.jpg */,
+				1863CCBF290723E400222355 /* reg2.png */,
+				1863CCB92907236500222355 /* log1.png */,
+				1863CCBA2907236500222355 /* log2.png */,
+				1863CCB7290720EC00222355 /* root3.png */,
+				184275A2290890C300AFA5A3 /* root2.png */,
+				1863CCAE29071DB900222355 /* root.png */,
+				1842759729088ABF00AFA5A3 /* image5.jpg */,
+				1842759629088ABF00AFA5A3 /* image6.jpg */,
+			);
+			path = "Workout Images";
 			sourceTree = "<group>";
 		};
 		1880EA8028D89127001267CC /* Model */ = {
@@ -233,6 +297,7 @@
 			children = (
 				1899CDC228C7C80700AA4586 /* AppDelegate.swift */,
 				1899CDC428C7C80700AA4586 /* SceneDelegate.swift */,
+				184275A12908908D00AFA5A3 /* Workout Images */,
 				183580492901C39C0016BA2F /* Animation Files */,
 				1880EA8028D89127001267CC /* Model */,
 				1880EA8128D893B0001267CC /* ViewControllers */,
@@ -240,6 +305,7 @@
 				188BD1BE28CBBDD50073B643 /* Registration */,
 				188BD1BD28CBBDB90073B643 /* Onboarding */,
 				1899CDC828C7C80700AA4586 /* Main.storyboard */,
+				1863CCB5290720DF00222355 /* root2.png */,
 				1899CDCB28C7C80A00AA4586 /* Assets.xcassets */,
 				1899CDCD28C7C80A00AA4586 /* LaunchScreen.storyboard */,
 				1899CDD028C7C80A00AA4586 /* Info.plist */,
@@ -320,33 +386,51 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1842759C29088F0400AFA5A3 /* w13.jpg in Resources */,
+				184275942908891E00AFA5A3 /* image3.jpg in Resources */,
+				1863CCB8290720EC00222355 /* root3.png in Resources */,
 				18AC0ED328D46781002EF7C1 /* Quiz2CollectionViewCell.xib in Resources */,
 				18F7870C28FFF7EC0058DDD0 /* jumping-jack.json in Resources */,
 				18A3615828FE8FFF00A1839D /* CollectionViewCell.xib in Resources */,
 				1899CDCF28C7C80A00AA4586 /* LaunchScreen.storyboard in Resources */,
+				1863CCC229072C8600222355 /* i1.jpg in Resources */,
 				18624CC529059A3F00BB0921 /* military-push-ups.json in Resources */,
 				18624CC929059A3F00BB0921 /* t-plank-excercise.json in Resources */,
+				1842759929088ABF00AFA5A3 /* image6.jpg in Resources */,
 				18624CC429059A3F00BB0921 /* squat-kick.json in Resources */,
 				18624CBF29059A3F00BB0921 /* jumping-squats.json in Resources */,
 				189107C928CD2D3200FC5977 /* GoogleService-Info.plist in Resources */,
 				18624CCA29059A3F00BB0921 /* cobras.json in Resources */,
 				18624CBE29059A3F00BB0921 /* frog-press.json in Resources */,
+				1863CCB6290720DF00222355 /* root2.png in Resources */,
+				184275922908891E00AFA5A3 /* image1.png in Resources */,
+				1842759829088ABF00AFA5A3 /* image4.jpg in Resources */,
+				1863CCC0290723E400222355 /* reg2.png in Resources */,
 				18624CD12905A2B600BB0921 /* skipping.json in Resources */,
+				1863CCBE290723DE00222355 /* reg1.png in Resources */,
 				18624CC829059A3F00BB0921 /* shoulder-stretch.json in Resources */,
+				1863CCBC2907236500222355 /* log2.png in Resources */,
 				18624CCF29059A4C00BB0921 /* squats-exercise-6527640.html in Resources */,
+				1863CCC429072C8D00222355 /* i2.png in Resources */,
+				1863CCBB2907236500222355 /* log1.png in Resources */,
+				184275A029088F0D00AFA5A3 /* w12.jpg in Resources */,
 				18624CCB29059A3F00BB0921 /* single-leg-hip-rotation.json in Resources */,
 				18624CC729059A3F00BB0921 /* squat-reach.json in Resources */,
 				18624CC329059A3F00BB0921 /* everse-crunches.json in Resources */,
 				189107DF28CD3AD000FC5977 /* QuizCollectionViewCell.xib in Resources */,
 				1899CDCC28C7C80A00AA4586 /* Assets.xcassets in Resources */,
+				1842759A29088ABF00AFA5A3 /* image5.jpg in Resources */,
 				18624CCD29059A3F00BB0921 /* punches.json in Resources */,
 				18624CC229059A3F00BB0921 /* staggered-push-ups.json in Resources */,
+				1842759F29088F0D00AFA5A3 /* w11.jpg in Resources */,
 				18624CC029059A3F00BB0921 /* lunge.json in Resources */,
 				18624CBD29059A3F00BB0921 /* seated-abs-circles.json in Resources */,
 				18624CCC29059A3F00BB0921 /* inchworm.json in Resources */,
 				18624CC129059A3F00BB0921 /* step-up-on-chair.json in Resources */,
 				18624CC629059A3F00BB0921 /* squat-kicks.json in Resources */,
 				1899CDCA28C7C80700AA4586 /* Main.storyboard in Resources */,
+				184275932908891E00AFA5A3 /* image2.jpg in Resources */,
+				1863CCAF29071DBA00222355 /* root.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
